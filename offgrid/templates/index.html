@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favorite Color</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="color">What is your favorite color?</label><br>
+        <input type="text" id="color" name="color"><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if color %}
+    <p>Your favorite color is {{ color }}.</p>
+    {% endif %}
+</body>
+</html>
